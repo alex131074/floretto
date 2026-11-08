@@ -1,2 +1,0 @@
-# floretto
-Сайт: Floretto

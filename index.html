@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floretto – цветочная мастерская на 70 лет Октября, 18 в Омске</title>
+<meta name="description" content="Floretto – цветочная мастерская в Омске, ул. 70 лет Октября, 18. Соберём букет по фото в той же цветовой гамме и под вашу сумму. Розы, хризантемы, композиции от 1500 ₽, свадебные букеты. Доставка и самовывоз, каждый день 9:00–21:00.">
+<meta property="og:title" content="Floretto – покажите фото, соберём букет в той же гамме">
+<meta property="og:description" content="Цветочная мастерская на 70 лет Октября, 18 в Омске.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#121011">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Floretto",
+  "telephone": "+79507895002",
+  "address": { "@type": "PostalAddress", "streetAddress": "ул. 70 лет Октября, 18", "addressLocality": "Омск", "addressCountry": "RU" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 54.983064, "longitude": 73.319433 },
+  "openingHours": "Mo-Su 09:00-21:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "ratingCount": "41" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+
+<div class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#hero"><img src="assets/img/logo.png" width="176" height="43" alt="Floretto – цветочная мастерская"></a>
+    <nav class="nav" aria-label="Разделы"><a href="#gamma">Гаммы</a><a href="#prices">Цены</a><a href="#how">Как заказать</a><a href="#reviews">Отзывы</a><a href="#contacts">Адрес</a></nav>
+    <a class="top-wa" href="https://wa.me/79507895002" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</div>
+
+<header class="hero" id="hero">
+  <div class="wrap hero-in">
+    <div class="hero-t">
+      <p class="kicker"><span class="now" id="now" hidden></span><span>цветочная мастерская · ул. 70 лет Октября, 18</span></p>
+      <h1>Покажите фото – соберём букет <em>в той же гамме</em></h1>
+      <p class="lead">Выберите цвет и сумму или пришлите снимок букета, который понравился. Флорист подберёт цветы по гамме и составу.</p>
+      <div class="pick" role="group" aria-label="Гамма букета">
+        <p class="pick-h">Гамма: <b id="palName">нежная</b></p>
+        <div class="sw">
+          <button type="button" class="dot on" data-p="0" data-name="нежная" aria-label="Нежная гамма" aria-pressed="true"></button>
+          <button type="button" class="dot" data-p="1" data-name="белая" aria-label="Белая гамма" aria-pressed="false"></button>
+          <button type="button" class="dot" data-p="2" data-name="яркая" aria-label="Яркая гамма" aria-pressed="false"></button>
+          <button type="button" class="dot" data-p="3" data-name="сиреневая" aria-label="Сиреневая гамма" aria-pressed="false"></button>
+          <button type="button" class="dot" data-p="4" data-name="красная" aria-label="Красная гамма" aria-pressed="false"></button>
+        </div>
+      </div>
+      <div class="pick" role="group" aria-label="Бюджет">
+        <p class="pick-h">Бюджет:</p>
+        <div class="chips" id="budget">
+          <button type="button" class="chip" data-b="до 2000 ₽" aria-pressed="false">до 2000 ₽</button>
+          <button type="button" class="chip on" data-b="2000–3000 ₽" aria-pressed="true">2000–3000 ₽</button>
+          <button type="button" class="chip" data-b="3000–5000 ₽" aria-pressed="false">3000–5000 ₽</button>
+          <button type="button" class="chip" data-b="от 5000 ₽" aria-pressed="false">от 5000 ₽</button>
+        </div>
+      </div>
+      <div class="acts">
+        <a class="btn btn-a" id="waGo" href="https://wa.me/79507895002" target="_blank" rel="noopener">Отправить в&nbsp;WhatsApp</a>
+        <a class="btn btn-g" href="tel:+79507895002">+7 (950) 789-50-02</a>
+      </div>
+      <p class="note">Фото понравившегося букета приложите прямо в&nbsp;чате.</p>
+    </div>
+    <div class="hero-v">
+      <canvas id="fl" aria-label="Букет, который перекрашивается в выбранную гамму"></canvas>
+    </div>
+  </div>
+  <div class="wrap">
+    <ul class="hero-f">
+      <li><b>4,6</b><span>41 оценка на&nbsp;Яндекс Картах</span></li>
+      <li><b>9–21</b><span>каждый день, без выходных</span></li>
+      <li><b>1500 ₽</b><span>от&nbsp;этой суммы – композиции в&nbsp;прайсе</span></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="sec" id="gamma">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="tag">наши работы</span><h2>Найдите свою <em>гамму</em></h2></div>
+      <p class="sub">Это букеты, которые мы уже собрали. Понравился какой-то – сохраните фото и&nbsp;пришлите нам: соберём похожий по&nbsp;цвету и&nbsp;составу.</p>
+    </div>
+    <div class="filter" id="filter" role="group" aria-label="Показать гамму">
+      <button type="button" class="chip on" data-g="all" aria-pressed="true">все</button>
+      <button type="button" class="chip" data-g="0" aria-pressed="false"><i class="c0"></i>нежная</button>
+      <button type="button" class="chip" data-g="1" aria-pressed="false"><i class="c1"></i>белая</button>
+      <button type="button" class="chip" data-g="2" aria-pressed="false"><i class="c2"></i>яркая</button>
+      <button type="button" class="chip" data-g="3" aria-pressed="false"><i class="c3"></i>сиреневая</button>
+      <button type="button" class="chip" data-g="4" aria-pressed="false"><i class="c4"></i>красная</button>
+    </div>
+    <div class="works" id="works">
+      <figure class="wk r" data-g="0"><img class="wk-i" src="assets/img/pink-mix.webp" alt="Букет с розовыми и белыми цветами" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Нежная</figcaption></figure>
+      <figure class="wk o" data-g="1"><img class="wk-i" src="assets/img/cream-roses.webp" alt="Букет кремовых роз с эвкалиптом" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Белая</figcaption></figure>
+      <figure class="wk t" data-g="2"><img class="wk-i" src="assets/img/coral.webp" alt="Коралловые пионовидные розы" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Яркая</figcaption></figure>
+      <figure class="wk r" data-g="3"><img class="wk-i" src="assets/img/lilac-mums.webp" alt="Букет с сиреневыми и белыми хризантемами" width="959" height="1100" loading="lazy" decoding="async"><figcaption>Сиреневая</figcaption></figure>
+      <figure class="wk t" data-g="4"><img class="wk-i" src="assets/img/red-roses.webp" alt="Большой букет красных роз" width="671" height="999" loading="lazy" decoding="async"><figcaption>Красная</figcaption></figure>
+      <figure class="wk o" data-g="0"><img class="wk-i" src="assets/img/hydrangea.webp" alt="Розовая гортензия в упаковке" width="619" height="1100" loading="lazy" decoding="async"><figcaption>Нежная</figcaption></figure>
+      <figure class="wk r" data-g="1"><img class="wk-i" src="assets/img/white-mums.webp" alt="Белые хризантемы" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Белая</figcaption></figure>
+      <figure class="wk r" data-g="2"><img class="wk-i" src="assets/img/bright-mix.webp" alt="Сборный букет с розами и синими цветами" width="733" height="1100" loading="lazy" decoding="async"><figcaption>Яркая</figcaption></figure>
+      <figure class="wk o" data-g="3"><img class="wk-i" src="assets/img/lilac-hydrangea.webp" alt="Букет с сиреневой гортензией и кремовыми розами" width="771" height="1100" loading="lazy" decoding="async"><figcaption>Сиреневая</figcaption></figure>
+      <figure class="wk r" data-g="1"><img class="wk-i" src="assets/img/vase.webp" alt="Композиция с хризантемами и розами в вазе" width="868" height="1100" loading="lazy" decoding="async"><figcaption>Белая</figcaption></figure>
+      <figure class="wk o" data-g="2"><img class="wk-i" src="assets/img/gypsophila.webp" alt="Разноцветная гипсофила" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Яркая</figcaption></figure>
+      <figure class="wk r" data-g="0"><img class="wk-i" src="assets/img/pink.webp" alt="Розовый сборный букет" width="868" height="1100" loading="lazy" decoding="async"><figcaption>Нежная</figcaption></figure>
+      <figure class="wk r" data-g="3"><img class="wk-i" src="assets/img/lilac-bouquets.webp" alt="Два букета с сиреневыми хризантемами" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Сиреневая</figcaption></figure>
+      <figure class="wk o" data-g="1"><img class="wk-i" src="assets/img/cream-in-pink.webp" alt="Кремовые розы в розовой упаковке" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Белая</figcaption></figure>
+      <figure class="wk t" data-g="0"><img class="wk-i" src="assets/img/pink-bag.webp" alt="Розовые цветы в сумочке" width="937" height="1100" loading="lazy" decoding="async"><figcaption>Нежная</figcaption></figure>
+      <figure class="wk r" data-g="1"><img class="wk-i" src="assets/img/white-mix.webp" alt="Белый букет с гортензией" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Белая</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-d" id="prices">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="tag">прайс</span><h2>Сколько стоит</h2></div>
+      <p class="sub">Цены из&nbsp;нашего прайса на&nbsp;Яндекс Картах. Цветы бывают сезонными, поэтому точную сумму флорист назовёт в&nbsp;WhatsApp.</p>
+    </div>
+    <div class="price">
+      <article class="pc pc-big">
+        <p class="pc-n"><small>от</small>1500<small>₽</small></p>
+        <h3>Композиции</h3>
+        <p>В&nbsp;корзинах, шляпных коробках и&nbsp;других формах. В&nbsp;прайсе 19&nbsp;вариантов – от&nbsp;1500 до&nbsp;5600&nbsp;₽.</p>
+      </article>
+      <article class="pc">
+        <p class="pc-n"><small>от</small>1800<small>₽</small></p>
+        <h3>Сборные букеты</h3>
+        <p>Из&nbsp;сезонных цветов, 17&nbsp;вариантов – от&nbsp;1800 до&nbsp;4500&nbsp;₽. Возможна доставка в&nbsp;день заказа.</p>
+      </article>
+      <article class="pc">
+        <p class="pc-n"><small>от</small>3550<small>₽</small></p>
+        <h3>Свадебные букеты</h3>
+        <p>Шесть вариантов в&nbsp;прайсе – от&nbsp;3550 до&nbsp;5400&nbsp;₽.</p>
+      </article>
+      <article class="pc pc-list">
+        <h3>Розы</h3>
+        <ul>
+          <li><span>Кенийские, 15&nbsp;шт.</span><b>2600&nbsp;₽</b></li>
+          <li><span>11 роз</span><b>3100&nbsp;₽</b></li>
+          <li><span>Два сорта, 15&nbsp;шт.</span><b>4100&nbsp;₽</b></li>
+          <li><span>Композиция из&nbsp;11 французских роз</span><b>4200&nbsp;₽</b></li>
+          <li><span>17 кремовых роз</span><b>4940&nbsp;₽</b></li>
+          <li><span>25 розовых роз</span><b>6600&nbsp;₽</b></li>
+          <li><span>Кустовые розы</span><b>6850&nbsp;₽</b></li>
+          <li><span>101 роза</span><b>25&nbsp;850&nbsp;₽</b></li>
+        </ul>
+      </article>
+      <article class="pc pc-list">
+        <h3>Хризантемы</h3>
+        <ul>
+          <li><span>5 хризантем</span><b>1850&nbsp;₽</b></li>
+          <li><span>Одноголовые</span><b>1999&nbsp;₽</b></li>
+          <li><span>7 хризантем</span><b>2450&nbsp;₽</b></li>
+          <li><span>9 хризантем</span><b>3050&nbsp;₽</b></li>
+          <li><span>19 хризантем</span><b>6100&nbsp;₽</b></li>
+        </ul>
+      </article>
+      <article class="pc pc-also">
+        <h3>Ещё в&nbsp;мастерской</h3>
+        <p>Открытки, мягкие игрушки, сухоцветы, стабилизированные цветы.</p>
+        <p class="pc-s">Скидки и&nbsp;бонусы: <span class="slot">{{условия скидок и бонусов}}</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="tag">как заказать</span><h2>Три сообщения – и&nbsp;букет собран</h2></div>
+    </div>
+    <ol class="steps">
+      <li><span class="st-n">01</span><h3>Фото или пара слов</h3><p>Пришлите в&nbsp;WhatsApp снимок букета или опишите: кому, по&nbsp;какому поводу, в&nbsp;какой гамме.</p></li>
+      <li><span class="st-n">02</span><h3>Сумма</h3><p>Назовите бюджет – подберём цветы так, чтобы в&nbsp;него уложиться.</p>
+        <blockquote>«девушки всегда отзывчивые и помогут собрать букет под ваше желание и вашу сумму!»<cite>Инкогнито 9512</cite></blockquote></li>
+      <li><span class="st-n">03</span><h3>Заберите или ждите курьера</h3><p>Самовывоз с&nbsp;70 лет Октября, 18 или доставка: <span class="slot">{{стоимость и зона доставки}}</span></p>
+        <blockquote>«Флорист учла все мои пожелания и собрала букет в очень короткие сроки.»<cite>Мария Sokolskaya</cite></blockquote></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec-d" id="reviews">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><span class="tag">отзывы</span><h2>Что говорят о&nbsp;нас наши клиенты</h2></div>
+      <p class="score"><b>4,6</b><span>41 оценка на&nbsp;Яндекс Картах</span></p>
+    </div>
+    <div class="rev-g"><article class="rev"><p>Всегда заказываю цветы только в этой студии, цветы всегда шикарные, свежие, стоят очень долго! А так же девушки всегда отзывчивые и помогут собрать букет под ваше желание и вашу сумму!</p><footer><b>Инкогнито 9512</b><span>15 апреля 2026</span></footer></article>
+<article class="rev"><p>Заказывала букет на день рождения мамы в цветочном магазине Флоретто. Осталась очень довольна! Цветы были свежими, а букет получился просто восхитительным. Флорист учла все мои пожелания и собрала букет в очень короткие сроки. Мама была в восторге! Большое спасибо за вашу работу и профессионализм!"</p><footer><b>Мария Sokolskaya</b><span>24 июня 2025</span></footer></article>
+<article class="rev"><p>Постоянно беру здесь цветы, всегда всё очень нравится! Цветы свежие, красивые, букеты всегда аккуратно оформлены. Хороший магазин, рекомендую!</p><footer><b>катя морозова</b><span>29 августа 2026</span></footer></article>
+<article class="rev"><p>Отличный цветочный магазин с ооочень демократичными ценами.
+Девушка продавец очень доброжелательная и старается собрать такой букетик,который нужен именно вам
+Мне очень понравился,обязательно ещё вернусь</p><footer><b>Мария</b><span>17 апреля 2026</span></footer></article>
+<article class="rev"><p>Замечательная мастерская! Все очень красиво и аккуратно, цветы свежие, девушка помогла с выбором и очень красиво оформила</p><footer><b>Ксюшк</b><span>4 мая 2026</span></footer></article>
+<article class="rev"><p>Шикарный букет,мне подарили на день рождения,он просто прекрасен🥰😍😍😍😍
+
+Я не ожидала ,что он будет таким большим
+Цветы безумно свежие</p><footer><b>София Дорохова</b><span>18 апреля 2026</span></footer></article>
+<article class="rev"><p>Цветы всегда свежие, букеты оформляют красиво. Жена в восторге, а, собственно, что ещё нужно)
+Девушки, спасибо Вам!</p><footer><b>Евгений</b><span>10 апреля 2026</span></footer></article>
+<article class="rev"><p>Прекрасный свежий букетик,быстрая четкая доставка! Дружелюбный персонал! Спасибо за помощь,за совет!Спасибо большое, будем с удовольствием обращаться ещё!!вы подняли всем настроение!!!всем советую!</p><footer><b>Маруся Климова</b><span>30 марта 2024</span></footer></article></div>
+    <div class="rev-g rev-more" id="revMore"><article class="rev"><p>Мои дорогие феички ,я обожаю вас за подход,оригинальность и великолепный вкус...Все ваши композиции покоряют меня ...всегда доверяю вам а вы меня радует.....Благодарю вас ...всегда с вами и навсегда только вы 😘</p><footer><b>Вородина Людмила</b><span>23 июня 2025</span></footer></article>
+<article class="rev"><p>Просто нереальная компания. Сервис про который Омск и не слышал. Очень внимательный персонал. Предложили Вазу. Доставили бесплатно. На каждом этапе с момента запроса букета держали в курсе. Крайне советую. Не пожалеете. Желаю успехов Вашему делу, уверен вы добьётесь огромных высот.</p><footer><b>Антон Пшеничный</b><span>1 марта 2023</span></footer></article>
+<article class="rev"><p>Уже год заказываю в данном магазине , нравится все . цветы долго стоят , обслуживание на высоте . спасибо .</p><footer><b>данил р.</b><span>10 ноября 2025</span></footer></article>
+<article class="rev"><p>Собрали прекрасный букет, который долго простоял. Спасибо!</p><footer><b>Екатерина Мирошниченко</b><span>14 мая 2025</span></footer></article>
+<article class="rev"><p>Самые прекрасные, индивидуальные букеты</p><footer><b>Надежда Афакина</b><span>12 мая 2026</span></footer></article></div>
+    <button class="btn btn-g rev-btn" id="revBtn" type="button" aria-expanded="false" aria-controls="revMore">Показать ещё отзывы</button>
+  </div>
+</section>
+
+<section class="sec night" id="contacts">
+  <div class="wrap cont">
+    <div>
+      <span class="tag">адрес</span>
+      <h2>70 лет Октября, 18</h2>
+      <a class="tel" href="tel:+79507895002">+7 (950) 789-50-02</a>
+      <ul class="info">
+        <li><span>Часы</span>Каждый день 9:00–21:00</li>
+        <li><span>Адрес</span>Омск, ул. 70 лет Октября, 18, первый этаж. Вход с&nbsp;крыльца под вывеской FLORETTO</li>
+        <li><span>Написать</span><div><a href="https://wa.me/79507895002" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://vk.ru/florettos" target="_blank" rel="noopener">ВКонтакте</a></div></li>
+        <li><span>Оплата</span>Картой, наличными, СБП и&nbsp;по&nbsp;QR-коду, переводом, онлайн, предоплатой</li>
+        <li><span>Удобно</span>Wi-Fi, можно с&nbsp;животными</li>
+      </ul>
+      <a class="maplink" href="https://yandex.ru/maps/org/floretto/28315120764/" target="_blank" rel="noopener">
+        <img src="assets/img/facade.webp" width="180" height="124" alt="Вход в мастерскую Floretto на улице 70 лет Октября, 18" loading="lazy">
+        <span><b>Открыть на&nbsp;Яндекс Картах</b><span>Крыльцо с&nbsp;вывеской «FLORETTO цветочная мастерская»</span></span>
+      </a>
+    </div>
+    <form class="form" id="form" novalidate>
+      <h3>Подберём букет за&nbsp;вас</h3>
+      <p class="form-s">Оставьте номер – перезвоним и&nbsp;предложим варианты в&nbsp;вашей гамме и&nbsp;бюджете.</p>
+      <label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7" required></label>
+      <label>Повод, гамма, бюджет<input name="note" type="text" placeholder="Маме, нежная гамма, до 3000 ₽"></label>
+      <button class="btn btn-a" type="submit">Отправить</button>
+      <p class="form-m" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Floretto</b>, цветочная мастерская, Омск, ул. 70 лет Октября, 18. <span class="slot">{{юрлицо}}</span> <span class="slot">{{ИНН}}</span></p>
+    <p>Цены уточняйте при заказе, сведения на сайте не являются публичной офертой. <span class="slot">{{политика конфиденциальности}}</span></p>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <a class="btn btn-a" href="https://wa.me/79507895002" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-g" href="tel:+79507895002">Позвонить</a>
+</div>
+
+<script src="assets/bouquet.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
